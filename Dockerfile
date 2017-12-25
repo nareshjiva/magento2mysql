@@ -66,7 +66,7 @@ COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-EXPOSE 3306 80 443 22
+EXPOSE 3306 80 443 22 2222
 CMD ["mysqld"]
 FROM alexcheng/apache2-php7:7.1.11
 
